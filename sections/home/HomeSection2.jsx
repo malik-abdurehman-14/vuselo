@@ -32,7 +32,7 @@ function HomeSection2() {
         </a>
       </div>
       {/* cards */}
-      <div className="flex gap-8 w-full">
+      <div className="flex gap-5 w-full">
         {cardsData.map((item, index) => (
           <div
             key={index}
@@ -60,7 +60,7 @@ function HomeSection2() {
                     {item.title}
                   </p>
 
-                  <p className="text-sm text-white/80 space-grotesk">
+                  <p className="text-base text-white/80 space-grotesk">
                     {item.desc}
                   </p>
                 </div>

@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
-import Hero from "@/sections/Hero";
-import HomeSection2 from "@/sections/HomeSection2";
+import About from "@/sections/home/About";
+import Hero from "@/sections/home/Hero";
+import HomeSection2 from "@/sections/home/HomeSection2";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <HomeSection2 />
+      <About />
     </>
   );
 }
