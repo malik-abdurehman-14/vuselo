@@ -30,7 +30,7 @@ function Hero() {
         </p>
 
         <div>
-          <Button title="SHOP ALL" variant="dark" textColor="text-froozen" />
+          <Button title="SHOP ALL" variant="dark" padding="px-4 py-2" />
         </div>
       </div>
       {/* bottom-content */}

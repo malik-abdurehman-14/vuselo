@@ -34,11 +34,12 @@ const buttonVariants = cva(
 
         dark: "bg-black text-froozen hover:text-black hover:bg-froozen border-froozen hover:border-black",
 
-        light: "bg-white text-black hover:bg-white/80",
+        light:
+          "bg-froozen text-black hover:text-froozen hover:bg-black border-froozen ",
       },
 
       size: {
-        default: "gap-2 px-4 py-2 text-base cursor-pointer",
+        default: "gap-2 text-base cursor-pointer",
         xs: "h-7 gap-1 px-2 text-xs",
         sm: "h-8 gap-1.5 px-3 text-sm",
         lg: "h-11 gap-2 px-6 text-base",
