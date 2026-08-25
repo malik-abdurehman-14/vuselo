@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full">
-      <div className="flex items-center justify-between gap-4 px-16 py-5 bg-black/80 backdrop-blur-xl">
+      <div className="flex items-center justify-between gap-4 px-16 py-8 bg-black/70 backdrop-blur-xl">
         {/* Logo */}
         <Link href="/">
           <Image
