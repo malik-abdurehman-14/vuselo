@@ -72,7 +72,7 @@ function ProductShowcase() {
   });
 
   return (
-    <div className="flex flex-col gap-10 px-16 py-12 bg-[#16191C] text-white">
+    <div className="flex flex-col gap-10 px-16 py-12 bg-[#131415] text-white">
       <div className="flex items-end justify-between gap-6 w-full">
         <div className="flex flex-col gap-2">
           <p className="text-sm text-froozen space-grotesk">FIND YOUR FORMAT</p>
