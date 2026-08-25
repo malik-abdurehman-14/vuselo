@@ -14,7 +14,7 @@ function Hero() {
       <div className="absolute inset-0 bg-black/20" />
 
       {/* Content */}
-      <div className="relative z-10 flex max-w-xl flex-col gap-6 px-20">
+      <div className="relative z-10 flex max-w-xl flex-col gap-4 px-20">
         <p className="text-base text-froozen">THE NEW STANDARDS IN NICOTINE</p>
 
         <h1 className="text-6xl font-extrabold">One Brand.</h1>
@@ -30,19 +30,19 @@ function Hero() {
         </div>
       </div>
       {/* bottom-content */}
-      <div className="absolute bottom-0 z-10 w-full flex items-center justify-between gap-10 bg-black/85 backdrop-blur-3xl py-14 px-20">
+      <div className="absolute bottom-0 z-10 w-full flex items-center justify-between gap-10 bg-black/85 backdrop-blur-3xl py-12 px-20">
         <div className="flex flex-col gap-2">
-          <p className="text-froozen text-base">YOUR FIRST MOVE</p>
+          <p className="text-froozen text-sm">YOUR FIRST MOVE</p>
           <p className="text-white text-xl">Try The Full System.</p>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-froozen text-base">
+          <p className="text-froozen text-sm">
             OUR E-LIQUIDS CONTAIN NO ADDED SUCRALOSE.
           </p>
           <p className="text-white text-xl">High Quality Flavours</p>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-froozen text-base">
+          <p className="text-froozen text-sm">
             NEW TO VUSELO? GET YOUR FREE SAMPLE.
           </p>
           <p className="text-white text-xl">Try A Free Can</p>
