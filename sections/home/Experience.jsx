@@ -6,12 +6,12 @@ import { GoArrowUpRight } from "react-icons/go";
 function Experience() {
   return (
     <section className="w-full">
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden h-[600px]">
         {/* Background Image */}
         <img
           src="/experience.png"
           alt="Exclusive Offers"
-          className="block w-full h-auto"
+          className="block w-full"
         />
 
         {/* Content */}

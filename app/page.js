@@ -4,9 +4,12 @@ import Experience from "@/sections/home/Experience";
 import FlavoursDisplay from "@/sections/home/FlavoursDisplay";
 import Hero from "@/sections/home/Hero";
 import HomeSection2 from "@/sections/home/HomeSection2";
+import Offers from "@/sections/home/Offers";
 import OffersBanner from "@/sections/home/OffersBanner";
 import ProductShowcase from "@/sections/home/ProductShowcase";
 import Rythum from "@/sections/home/Rythum";
+import VelloSummer from "@/sections/home/VelloSummer";
+import Testimonials from "@/components/layout/Testimonials";
 import Image from "next/image";
 
 export default function Home() {
@@ -21,6 +24,9 @@ export default function Home() {
       <FlavoursDisplay />
       <Rythum />
       <Experience />
+      <Offers />
+      <VelloSummer />
+      <Testimonials />
     </>
   );
 }

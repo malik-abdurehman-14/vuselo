@@ -116,6 +116,7 @@ function ProductShowcase() {
       <div className="grid grid-cols-3 gap-6">
         {filteredCards.map((item, index) => (
           <ProductCard
+            key={index}
             img={item.img}
             desc={item.desc}
             title={item.title}
