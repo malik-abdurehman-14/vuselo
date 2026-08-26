@@ -6,16 +6,16 @@ import { Search, ShoppingBag, UserRoundArrowLeft } from "lucide-react";
 
 function Navbar() {
   const navLinks = [
-    { name: "Shop Devices", link: "/" },
-    { name: "Shop Pouches", link: "/" },
-    { name: "Subscribe & Save", link: "/" },
+    { name: "Shop Devices", link: "/products" },
+    { name: "Shop Pouches", link: "/products" },
+    { name: "Subscribe & Save", link: "/about" },
     { name: "Offers", link: "/" },
     { name: "Support", link: "/" },
   ];
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full">
-      <div className="flex items-center justify-between gap-4 px-16 py-8 bg-black/80 backdrop-blur-3xl">
+      <div className="flex items-center justify-between gap-4 px-16 py-6 bg-black/80 backdrop-blur-3xl">
         {/* Logo */}
         <Link href="/">
           <Image
