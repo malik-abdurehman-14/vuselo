@@ -11,6 +11,9 @@ import Rythum from "@/sections/home/Rythum";
 import VelloSummer from "@/sections/home/VelloSummer";
 import Testimonials from "@/components/layout/Testimonials";
 import Image from "next/image";
+import Faqs from "@/components/layout/Faqs";
+import UpToDate from "@/components/layout/UpToDate";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -27,6 +30,9 @@ export default function Home() {
       <Offers />
       <VelloSummer />
       <Testimonials />
+      <Faqs />
+      <UpToDate />
+      <Footer />
     </>
   );
 }
