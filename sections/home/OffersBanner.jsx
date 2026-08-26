@@ -18,7 +18,7 @@ function OffersBanner() {
         />
 
         {/* Content */}
-        <div className="absolute inset-2 flex items-center justify-end pr-24">
+        <div className="absolute inset-2 flex items-center justify-end pr-16">
           <div className="flex max-w-xl flex-col gap-5 text-black">
             <p className="text-base space-grotesk">A SIMPLER RITUAL</p>
 
