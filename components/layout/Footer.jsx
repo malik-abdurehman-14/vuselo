@@ -16,7 +16,7 @@ function Footer() {
   ];
   return (
     <footer className="bg-black text-white w-full px-16 py-14 flex justify-between gap-10 h-[480px]">
-      <div className="flex flex-col gap-8 justify-between w-[40%]">
+      <div className="flex flex-col gap-8 justify-between w-[45%]">
         <div>
           <img src="/logo.png" alt="" />
           <p className="text-base space-grotesk my-6">
@@ -65,7 +65,7 @@ function Footer() {
       </div>
       {/* right-side */}
       <div className="flex flex-col gap-8 justify-between w-[50%]">
-        <div className="flex items-center gap-10">
+        <div className="flex items-center justify-between">
           {links.map((item, index) => (
             <Link
               href={item.link}
