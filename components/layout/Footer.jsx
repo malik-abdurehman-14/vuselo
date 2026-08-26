@@ -64,7 +64,7 @@ function Footer() {
         </div>
       </div>
       {/* right-side */}
-      <div className="flex flex-col gap-8 justify-between w-[60%]">
+      <div className="flex flex-col gap-8 justify-between w-[50%]">
         <div className="flex items-center gap-10">
           {links.map((item, index) => (
             <Link
