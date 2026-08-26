@@ -4,10 +4,10 @@ import { GoArrowUpRight } from "react-icons/go";
 function Rythum() {
   return (
     <div className="flex items-center justify-between gap-8 w-full px-16 py-14 bg-black text-white">
-      <div className="flex flex-col gap-6 w-[50%]">
+      <div className="flex flex-col gap-6 w-[60%]">
         <p className="text-base space-grotesk">STAY IN THE RYTHM</p>
 
-        <h1 className="text-5xl font-extrabold space-grotesk w-[60%]">
+        <h1 className="text-5xl font-extrabold space-grotesk w-[65%]">
           Never Run Out Of Your <span className="text-froozen">Ritual</span>
         </h1>
 
@@ -27,7 +27,7 @@ function Rythum() {
           View Collection <GoArrowUpRight />
         </a>
       </div>
-      <div className="w-[30%]">
+      <div className="w-[40%]">
         <img className="" src="/rythm.png" alt="" />
       </div>
     </div>
