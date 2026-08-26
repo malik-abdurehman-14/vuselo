@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import About from "@/sections/home/About";
+import Experience from "@/sections/home/Experience";
 import FlavoursDisplay from "@/sections/home/FlavoursDisplay";
 import Hero from "@/sections/home/Hero";
 import HomeSection2 from "@/sections/home/HomeSection2";
@@ -19,6 +20,7 @@ export default function Home() {
       <OffersBanner />
       <FlavoursDisplay />
       <Rythum />
+      <Experience />
     </>
   );
 }
