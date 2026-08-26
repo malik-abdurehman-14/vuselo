@@ -18,7 +18,7 @@ function OffersBanner() {
         />
 
         {/* Content */}
-        <div className="absolute inset-12 flex items-center justify-end pr-24">
+        <div className="absolute inset-2 flex items-center justify-end pr-24">
           <div className="flex max-w-xl flex-col gap-5 text-black">
             <p className="text-base space-grotesk">A SIMPLER RITUAL</p>
 
@@ -47,7 +47,7 @@ function OffersBanner() {
           </p>
         </div>
         {/* <div className="border border-gray-400"></div> */}
-        <div className="flex flex-col gap-2 py-8 pl-6 border-l border-gray-400">
+        <div className="flex flex-col gap-2 py-8 pl-6 border-l border-gray-400 -ml-6">
           <p className="text-froozen text-base flex items-center gap-1 space-grotesk">
             <AiFillSafetyCertificate size={20} /> Adult Nicotine Consumers Only
           </p>
@@ -56,7 +56,7 @@ function OffersBanner() {
           </p>
         </div>
         {/* <div className="border border-gray-400"></div> */}
-        <div className="flex flex-col gap-2 py-8 pl-6 border-l border-gray-400">
+        <div className="flex flex-col gap-2 py-8 pl-6 border-l border-gray-400 -ml-6">
           <p className="text-froozen text-base flex items-center gap-1 space-grotesk">
             <FaClock size={20} /> Made To Fit Your Life
           </p>
