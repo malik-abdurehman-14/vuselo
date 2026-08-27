@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "../ui/Button";
 
-function ProductCard({ img, desc, title, price }) {
+function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
   return (
     <div className="flex flex-col w-full cursor-pointer group overflow-hidden">
-      <div className="relative bg-black items-center justify-center flex">
+      <div className={`relative ${bgColor} items-center justify-center flex`}>
         <img
           className="transition-transform duration-700 ease-out group-hover:scale-105"
           src={img}
@@ -25,7 +25,7 @@ function ProductCard({ img, desc, title, price }) {
           <p className="text-xl text-froozen space-grotesk">{price}</p>
         </div>
         <Link href="/">
-          <Button title="Add" variant="light" padding="px-6 py-1" />
+          <Button title="Add +" variant="light" padding="px-6 py-1" />
         </Link>
       </div>
     </div>

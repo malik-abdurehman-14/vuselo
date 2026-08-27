@@ -1,55 +1,12 @@
 "use client";
 
 import ProductCard from "@/components/layout/ProductCard";
+import { cardsData } from "@/data/products";
 import React, { useState } from "react";
 
 function ProductShowcase() {
   const tabs = ["Collection", "Devices", "Pods", "Pouches"];
   const [activeTab, setActiveTab] = useState("Collection");
-  const cardsData = [
-    {
-      title: "Lemon & Lime",
-      desc: "DEVICES . VAPES .",
-      category: "vape",
-      price: "£29.99",
-      img: "/p1.webp",
-    },
-    {
-      title: "Lemon & Lime",
-      desc: "DEVICES . VAPES .",
-      category: "vape",
-      price: "£29.99",
-      img: "/p2.webp",
-    },
-    {
-      title: "Lemon & Lime",
-      desc: "DEVICES . VAPES .",
-      category: "vape",
-      price: "£29.99",
-      img: "/p3.webp",
-    },
-    {
-      title: "Lemon & Lime",
-      desc: "11mg, 14mg & 17mg .",
-      category: "pouche",
-      price: "£29.99",
-      img: "/p4.webp",
-    },
-    {
-      title: "Lemon & Lime",
-      desc: "11mg, 14mg & 17mg .",
-      category: "pouche",
-      price: "£29.99",
-      img: "/p5.webp",
-    },
-    {
-      title: "Lemon & Lime",
-      desc: "11mg, 14mg & 17mg .",
-      category: "pouche",
-      price: "£29.99",
-      img: "/p6.webp",
-    },
-  ];
 
   const filteredCards = cardsData.filter((item) => {
     if (activeTab === "Collection") {
