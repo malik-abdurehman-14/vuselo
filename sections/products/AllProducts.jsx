@@ -43,7 +43,7 @@ function AllProducts() {
   return (
     <div className="flex gap-10 w-full justify-between bg-black text-white px-16 py-16">
       {/* filteration */}
-      <div className="bg-[#242628] flex flex-col gap-6 rounded-md w-[30%] p-5">
+      <div className="bg-[#242628] flex flex-col gap-6 rounded-md w-[25%] p-5">
         <div className="flex items-center justify-between">
           <p className="text-lg space-grotesk font-bold">Filters</p>
           <a className="text-gray-400 text-sm" href="/">
@@ -60,8 +60,8 @@ function AllProducts() {
           </div>
           {/* btns */}
           <div className="flex items-center gap-3">
-            <Button title="Pouches" variant="light" padding="px-4 py-1" />
-            <Button title="Devices & Pods" variant="dark" padding="px-4 py-1" />
+            <Button title="Pouches" variant="light" padding="px-3 py-1" />
+            <Button title="Devices & Pods" variant="dark" padding="px-3 py-1" />
           </div>
         </div>
         {/* brands */}
@@ -163,7 +163,7 @@ function AllProducts() {
         </div>
       </div>
       {/* right-side */}
-      <div className="flex flex-col gap-8 w-[70%]">
+      <div className="flex flex-col gap-8 w-[75%]">
         <div className="flex items-center justify-between gap-8">
           <div className="flex items-center gap-2">
             <p className="bg-black text-froozen px-4 py-1 rounded-full flex items-center gap-1 border border-froozen">
@@ -215,7 +215,7 @@ function AllProducts() {
           </div>
         </div>
         {/* cards */}
-        <div className="grid grid-cols-3 gap-7">
+        <div className="grid grid-cols-3 gap-6">
           {currentCards.map((item, index) => (
             <ProductCard
               key={index}
