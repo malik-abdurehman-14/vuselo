@@ -142,6 +142,7 @@ function ProductDetails() {
             <div className="flex items-center gap-3 w-full pb-4 border-b border-gray-800">
               <QuantityBtn />
               <Button
+                href="/cart"
                 title="Add To Cart"
                 variant="light"
                 padding="p-2"

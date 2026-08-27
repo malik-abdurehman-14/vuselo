@@ -7,7 +7,9 @@ import { Search, ShoppingBag, UserRoundArrowLeft } from "lucide-react";
 
 function Navbar() {
   const pathname = usePathname();
-  const isProductDetailsPage = pathname === "/product-details";
+  const isProductDetailsPage =
+    pathname.startsWith("/product-details") ||
+    ["/cart", "/devices"].includes(pathname);
   const navLinks = [
     { name: "Shop Devices", link: "/products" },
     { name: "Shop Pouches", link: "/products" },
