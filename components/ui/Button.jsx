@@ -68,9 +68,10 @@ function Button({
   textSize,
   href,
   title,
+  width,
   ...props
 }) {
-  const customClasses = cn(bg, textColor, padding, textSize);
+  const customClasses = cn(bg, textColor, padding, textSize, width);
 
   // Agar href diya hai to button ki jagah link render hoga
   if (href) {

@@ -10,6 +10,7 @@ import ProductShowcase from "@/sections/home/ProductShowcase";
 import Rythum from "@/sections/home/Rythum";
 import VelloSummer from "@/sections/home/VelloSummer";
 import Testimonials from "@/components/layout/Testimonials";
+import ProductsSlidder from "@/components/layout/ProductsSlidder";
 import Image from "next/image";
 import Faqs from "@/components/layout/Faqs";
 import UpToDate from "@/components/layout/UpToDate";
@@ -27,8 +28,13 @@ export default function Home() {
       <FlavoursDisplay />
       <Rythum />
       <Experience />
-      <Offers />
+      <ProductsSlidder
+        shortTitle="TRENSDING NOW"
+        heading1="Made For The Way"
+        heading2="You Choose."
+      />
       <VelloSummer />
+      <Offers />
       <Testimonials />
       <Faqs />
       <UpToDate />

@@ -8,25 +8,27 @@ function ProductShowcase() {
   const tabs = ["Collection", "Devices", "Pods", "Pouches"];
   const [activeTab, setActiveTab] = useState("Collection");
 
-  const filteredCards = cardsData.filter((item) => {
-    if (activeTab === "Collection") {
+  const filteredCards = cardsData
+    .filter((item) => {
+      if (activeTab === "Collection") {
+        return true;
+      }
+
+      if (activeTab === "Devices") {
+        return item.category === "vape";
+      }
+
+      if (activeTab === "Pods") {
+        return item.category === "vape";
+      }
+
+      if (activeTab === "Pouches") {
+        return item.category === "pouche";
+      }
+
       return true;
-    }
-
-    if (activeTab === "Devices") {
-      return item.category === "vape";
-    }
-
-    if (activeTab === "Pods") {
-      return item.category === "vape";
-    }
-
-    if (activeTab === "Pouches") {
-      return item.category === "pouche";
-    }
-
-    return true;
-  });
+    })
+    .slice(0, 6);
 
   return (
     <div className="flex flex-col gap-10 px-16 py-12 bg-[#131415] text-white">
