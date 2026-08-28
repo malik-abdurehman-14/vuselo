@@ -15,7 +15,7 @@ function Navbar() {
     { name: "Shop Pouches", link: "/products" },
     { name: "Subscribe & Save", link: "/about" },
     { name: "Offers", link: "/" },
-    { name: "Support", link: "/" },
+    { name: "Support", link: "/terms-conditions" },
   ];
 
   return (

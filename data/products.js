@@ -77,3 +77,69 @@ export const cardsData = [
     img: "/p6.webp",
   },
 ];
+
+export const blogsData = [
+  {
+    title: "What 'ceramic-heater tech' actually means",
+    desc: "A plain-language look at what's inside a VUSELO pod, and why it changes flavor consistency.",
+    date: "12 Aug 2026 ·",
+    time: "4 min read",
+    img: "/about2.png",
+  },
+  {
+    title: "What 'ceramic-heater tech' actually means",
+    desc: "A plain-language look at what's inside a VUSELO pod, and why it changes flavor consistency.",
+    date: "12 Aug 2026 ·",
+    time: "4 min read",
+    img: "/about2.png",
+  },
+  {
+    title: "What 'ceramic-heater tech' actually means",
+    desc: "A plain-language look at what's inside a VUSELO pod, and why it changes flavor consistency.",
+    date: "12 Aug 2026 ·",
+    time: "4 min read",
+    img: "/about2.png",
+  },
+  {
+    title: "What 'ceramic-heater tech' actually means",
+    desc: "A plain-language look at what's inside a VUSELO pod, and why it changes flavor consistency.",
+    date: "12 Aug 2026 ·",
+    time: "4 min read",
+    img: "/about2.png",
+  },
+  {
+    title: "What 'ceramic-heater tech' actually means",
+    desc: "A plain-language look at what's inside a VUSELO pod, and why it changes flavor consistency.",
+    date: "12 Aug 2026 ·",
+    time: "4 min read",
+    img: "/about2.png",
+  },
+  {
+    title: "What 'ceramic-heater tech' actually means",
+    desc: "A plain-language look at what's inside a VUSELO pod, and why it changes flavor consistency.",
+    date: "12 Aug 2026 ·",
+    time: "4 min read",
+    img: "/about2.png",
+  },
+  {
+    title: "What 'ceramic-heater tech' actually means",
+    desc: "A plain-language look at what's inside a VUSELO pod, and why it changes flavor consistency.",
+    date: "12 Aug 2026 ·",
+    time: "4 min read",
+    img: "/about2.png",
+  },
+  {
+    title: "What 'ceramic-heater tech' actually means",
+    desc: "A plain-language look at what's inside a VUSELO pod, and why it changes flavor consistency.",
+    date: "12 Aug 2026 ·",
+    time: "4 min read",
+    img: "/about2.png",
+  },
+  {
+    title: "What 'ceramic-heater tech' actually means",
+    desc: "A plain-language look at what's inside a VUSELO pod, and why it changes flavor consistency.",
+    date: "12 Aug 2026 ·",
+    time: "4 min read",
+    img: "/about2.png",
+  },
+];
