@@ -29,7 +29,7 @@ function Navbar() {
             </p>
           </div>
         )}
-        <div className="flex items-center justify-between gap-4 px-16 py-6 bg-black/80 backdrop-blur-3xl">
+        <div className="flex items-center justify-between gap-4 px-16 py-6 bg-black backdrop-blur-3xl">
           {/* Logo */}
           <Link href="/">
             <Image

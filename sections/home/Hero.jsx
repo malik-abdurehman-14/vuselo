@@ -11,7 +11,7 @@ function Hero() {
       <Image src="/hero.png" alt="" fill priority className="object-cover" />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/20" />
+      <div className="absolute inset-0 bg-black/5" />
 
       {/* Content */}
       <div className="relative z-10 flex max-w-2xl flex-col gap-4 px-16">
