@@ -9,7 +9,7 @@ function Navbar() {
   const pathname = usePathname();
   const isProductDetailsPage =
     pathname.startsWith("/product-details") ||
-    ["/cart", "/devices"].includes(pathname);
+    ["/cart", "/checkout"].includes(pathname);
   const navLinks = [
     { name: "Shop Devices", link: "/products" },
     { name: "Shop Pouches", link: "/products" },

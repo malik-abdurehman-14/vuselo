@@ -12,7 +12,7 @@ function UserCart() {
     <div className="flex flex-col text-white px-16 bg-black gap-10 py-14 pt-36 w-full">
       <div>
         <a
-          href="/"
+          href="/products"
           className="text-froozen text-sm flex items-center gap-2 w-fit"
         >
           <FaArrowLeftLong size={12} />
@@ -78,7 +78,7 @@ function UserCart() {
           </div>
           {/* promo-code */}
           <div className="flex flex-col gap-3 p-4 rounded-md border border-gray-700">
-            <p className="text-base space-grotesk">
+            <p className="text-lg space-grotesk">
               Have a promo or discount code?
             </p>
             <div className="flex items-center gap-3">
@@ -86,7 +86,7 @@ function UserCart() {
                 <input
                   type="text"
                   placeholder="enter code"
-                  className="flex-1 bg-transparent py-1 px-3 text-white outline-none space-grotesk placeholder:text-white"
+                  className="flex-1 bg-transparent py-2 px-3 text-white outline-none space-grotesk placeholder:text-white"
                 />
 
                 {/* Arrow */}
@@ -94,7 +94,7 @@ function UserCart() {
                   <TiTick size={20} /> 15% Off Applied
                 </p>
               </div>
-              <Button title="Apply" variant="light" padding="px-8 py-1" />
+              <Button title="Apply" variant="light" padding="px-8 py-2" />
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@ function UserCart() {
                   Excluding delivery and taxes
                 </p>
               </div>
-              <p className="text-xl font-bold">£19.93</p>
+              <p className="text-2xl font-bold">£19.93</p>
             </div>
             {/* alert */}
             <div className="flex gap-3 w-full bg-red-500 rounded-md p-4 text-sm my-2">
@@ -136,6 +136,7 @@ function UserCart() {
             </div>
             {/* checkout */}
             <Button
+              href="checkout"
               title="Proceed to checkout"
               variant="light"
               width="w-full"
