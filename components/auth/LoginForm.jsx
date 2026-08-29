@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Input from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { FcGoogle } from "react-icons/fc";
@@ -20,9 +21,12 @@ function LoginForm() {
           <div className="flex items-center justify-between mb-2">
             <p className="space-grotesk">Password</p>
 
-            <button className="text-sm text-froozen hover:underline cursor-pointer">
+            <Link
+              href="/forgot-password"
+              className="text-sm text-froozen hover:underline cursor-pointer"
+            >
               Forgot Password?
-            </button>
+            </Link>
           </div>
 
           <Input
