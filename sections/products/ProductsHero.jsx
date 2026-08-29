@@ -1,13 +1,13 @@
 "use client";
 
-function ProductsHero({ heading, highlight, description }) {
+function ProductsHero({ bgImg, heading, highlight, description }) {
   return (
     <section className="w-full">
       <div className="relative w-full overflow-hidden">
         <img
-          src="/productHero.png"
+          src={bgImg}
           alt="Exclusive Offers"
-          className="block w-full h-auto"
+          className="w-full h-[600px] object-cover object-[center_40%]"
         />
 
         <div className="absolute inset-0 flex items-center pl-16">

@@ -10,6 +10,7 @@ function page() {
     <>
       <Navbar />
       <ProductsHero
+        bgImg="/productHero.png"
         heading="View"
         highlight="Offers"
         description="Ways to save across every device and pouch in the VUSELO range."
