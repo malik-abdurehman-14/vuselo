@@ -17,7 +17,7 @@ function BlogDetails() {
       </div>
       <div className="flex justify-center w-full px-16 pb-14 bg-gray-50">
         {/* details-card */}
-        <div className="w-full bg-[#FAFAFA] rounded-xl p-8 -mt-14 flex flex-col gap-3 shadow-2xl">
+        <div className="w-full bg-[#FAFAFA] rounded-xl p-8 -mt-24 flex flex-col gap-3 shadow-2xl">
           <div className="bg-froozen text-black py-1 px-4 text-xs rounded-md w-fit">
             Devices
           </div>
