@@ -254,7 +254,7 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
             </div>
           </div>
         </div>
-
+        
         <div className="absolute bottom-0 w-full bg-white shadow-[0_-8px_20px_rgba(0,0,0,0.15)] p-5 flex flex-col gap-3 items-center">
           <div className="flex items-center gap-3 w-full">
             <QuantityBtn variant="dark" />
