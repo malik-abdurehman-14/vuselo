@@ -9,7 +9,7 @@ function AuthLayout({ children }) {
           <img
             src="/about2.png"
             alt=""
-            className="w-full h-full object-cover rounded-[50px]"
+            className="w-full h-screen object-cover rounded-[50px]"
           />
 
           {/* Bottom to Top Overlay */}
