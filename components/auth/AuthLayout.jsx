@@ -4,12 +4,12 @@ function AuthLayout({ children }) {
   return (
     <section className="min-h-screen bg-black text-white flex gap-8">
       {/* Left Side */}
-      <div className="hidden lg:block w-[50%] p-8">
+      <div className="hidden lg:block w-[50%] h-full p-8">
         <div className="relative overflow-hidden rounded-[50px]">
           <img
             src="/about2.png"
             alt=""
-            className="w-full h-auto rounded-[50px]"
+            className="w-full h-full object-cover rounded-[50px]"
           />
 
           {/* Bottom to Top Overlay */}

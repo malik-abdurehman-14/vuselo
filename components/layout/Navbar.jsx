@@ -65,9 +65,12 @@ function Navbar() {
               <ShoppingBag size={21} />
             </button>
 
-            <button className="cursor-pointer transition-opacity hover:opacity-70">
+            <a
+              href="/login"
+              className="cursor-pointer transition-opacity hover:opacity-70"
+            >
               <UserRoundArrowLeft size={21} />
-            </button>
+            </a>
           </div>
         </div>
       </nav>
