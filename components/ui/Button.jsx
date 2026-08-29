@@ -30,7 +30,8 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20",
 
-        link: "text-primary underline-offset-4 hover:underline",
+        black:
+          "bg-white text-black hover:text-white hover:bg-black border-black hover:border-white",
 
         dark: "bg-black text-froozen hover:text-black hover:bg-froozen border-froozen hover:border-black",
 

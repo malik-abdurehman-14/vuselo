@@ -2,7 +2,7 @@
 
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
-import AllProducts from "@/sections/products/AllProducts";
+import Bundles from "@/sections/products/Bundles";
 import ProductsHero from "@/sections/products/ProductsHero";
 
 function page() {
@@ -10,11 +10,11 @@ function page() {
     <>
       <Navbar />
       <ProductsHero
-        heading="Shop"
-        highlight="All"
-        description="Browse the full VUSELO range — devices, pods, and pouches."
+        heading="View"
+        highlight="Offers"
+        description="Ways to save across every device and pouch in the VUSELO range."
       />
-      <AllProducts />
+      <Bundles />
       <Footer />
     </>
   );
