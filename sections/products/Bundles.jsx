@@ -28,11 +28,11 @@ function Bundles() {
     },
   ];
   return (
-    <div className="flex flex-col gap-7 px-16 py-12 bg-gray-50 text-black">
+    <div className="flex flex-col gap-7 lg:px-16 px-5 py-12 bg-gray-50 text-black">
       <p className="text-3xl font-extrabold space-grotesk">
         Bundles & Multi-buys
       </p>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-6 gap-4">
         {bundles.map((item, index) => (
           <BundleCard
             key={index}
@@ -44,15 +44,15 @@ function Bundles() {
           />
         ))}
       </div>
-      <div className="flex gap-7 w-full my-4">
+      <div className="flex md:flex-row flex-col gap-7 w-full my-4">
         {/* left-side */}
-        <div className="w-[70%] bg-white rounded-lg flex items-center gap-6">
+        <div className="md:w-[70%] w-full bg-white rounded-lg flex sm:flex-row flex-col items-center gap-6">
           <img
-            className="rounded-l-lg h-[200px] object-contain"
+            className="sm:rounded-l-lg rounded-t-lg sm:w-auto w-full object-cover object-[center_80%] h-[200px] sm:object-contain"
             src="/offer1.png"
             alt=""
           />
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 sm:p-0 p-4">
             <p className="text-3xl space-grotesk font-bold group-hover:text-froozen">
               Build Your Bundle
             </p>
@@ -70,7 +70,7 @@ function Bundles() {
           </div>
         </div>
         {/* right-side */}
-        <div className="w-[30%] bg-white rounded-lg flex flex-col gap-3 p-5">
+        <div className="md:w-[30%] w-full bg-white rounded-lg flex flex-col gap-3 p-5">
           <p className="bg-froozen rounded-md text-xs py-1 px-2 w-fit">
             SUBSCRIBE
           </p>
