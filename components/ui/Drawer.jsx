@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 
 function Drawer({ open, onClose, children }) {
   // Prevent body scroll when drawer is open
@@ -16,13 +17,19 @@ function Drawer({ open, onClose, children }) {
     };
   }, [open]);
 
-  return (
+  // Don't render portal during SSR
+  if (typeof document === "undefined") {
+    return null;
+  }
+
+  return createPortal(
     <>
       {/* Overlay */}
       <div
         onClick={onClose}
-        className={`fixed inset-0 z-50 bg-black/40 backdrop-blur-lg cursor-pointer
-          transition-opacity duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]
+        className={`fixed inset-0 z-[9998] bg-black/40 backdrop-blur-lg cursor-pointer
+          transition-opacity duration-700
+          ease-[cubic-bezier(0.4,0,0.2,1)]
           ${
             open
               ? "opacity-100 pointer-events-auto"
@@ -32,7 +39,7 @@ function Drawer({ open, onClose, children }) {
 
       {/* Drawer */}
       <div
-        className={`fixed right-0 top-0 z-50 h-full w-[500px] max-w-[90vw]
+        className={`fixed right-0 top-0 z-[9999] h-full sm:w-[500px] w-[300px] max-w-[90vw]
           bg-white text-black
           transition-transform duration-700
           ease-[cubic-bezier(0.4,0,0.2,1)]
@@ -41,7 +48,8 @@ function Drawer({ open, onClose, children }) {
       >
         {children}
       </div>
-    </>
+    </>,
+    document.body,
   );
 }
 

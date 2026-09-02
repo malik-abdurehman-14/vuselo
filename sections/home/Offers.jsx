@@ -23,19 +23,19 @@ function Offers() {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 px-16 py-14 bg-black text-white">
+    <div className="flex flex-col gap-10 lg:px-16 px-5 py-14 bg-black text-white">
       <div className="flex flex-col items-center justify-center gap-2">
         <p className="text-sm text-froozen space-grotesk">SAVE MORE</p>
-        <p className="text-4xl font-extrabold space-grotesk">
+        <p className="sm:text-4xl text-3xl font-extrabold space-grotesk">
           Exclusive <span className="text-froozen">Offers</span>
         </p>
       </div>
       {/* cards */}
-      <div className="flex gap-5 w-full">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 w-full">
         {cardsData.map((item, index) => (
           <div
             key={index}
-            className="group relative w-full h-[480px] overflow-hidden rounded-t-xl cursor-pointer"
+            className="group relative w-full sm:h-[480px] h-[380px] overflow-hidden rounded-t-xl cursor-pointer"
           >
             {/* Background Image */}
             <img
@@ -51,7 +51,7 @@ function Offers() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent" />
 
             {/* Content */}
-            <div className="absolute inset-x-0 bottom-0 p-8">
+            <div className="absolute inset-x-0 bottom-0 lg:p-8 p-4">
               {/* Text */}
               <div className="flex flex-col gap-1">
                 <p className="text-2xl font-bold text-white space-grotesk">

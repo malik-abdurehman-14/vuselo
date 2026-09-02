@@ -31,19 +31,19 @@ function ProductShowcase() {
     .slice(0, 6);
 
   return (
-    <div className="flex flex-col gap-10 px-16 py-12 bg-[#131415] text-white">
-      <div className="flex items-end justify-between gap-6 w-full">
-        <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-10 lg:px-16 px-5 py-12 bg-[#131415] text-white">
+      <div className="flex md:flex-row flex-col md:items-end items-center justify-between gap-6 w-full">
+        <div className="flex md:items-start items-center flex-col gap-2">
           <p className="text-sm text-froozen space-grotesk">FIND YOUR FORMAT</p>
-          <p className="text-4xl font-extrabold space-grotesk">
+          <p className="sm:text-4xl text-3xl font-extrabold space-grotesk">
             Made For The Way
           </p>
-          <p className="text-4xl font-extrabold text-froozen space-grotesk">
+          <p className="sm:text-4xl text-3xl font-extrabold text-froozen space-grotesk">
             You Choose.
           </p>
         </div>
         {/* tabs */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center sm:gap-6 gap-4">
           {tabs.map((item, index) => {
             const isActive = activeTab === item;
 
@@ -72,7 +72,7 @@ function ProductShowcase() {
         </div>
       </div>
       {/* cards */}
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
         {filteredCards.map((item, index) => (
           <ProductCard
             key={index}

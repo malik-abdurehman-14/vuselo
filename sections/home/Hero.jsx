@@ -11,17 +11,19 @@ function Hero() {
       <Image src="/hero.png" alt="" fill priority className="object-cover" />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/5" />
+      <div className="absolute inset-0 bg-black/60 lg:bg-black/5" />
 
       {/* Content */}
-      <div className="relative z-10 flex max-w-2xl flex-col gap-4 px-16">
+      <div className="relative z-10 flex max-w-2xl flex-col gap-4 lg:px-16 px-5">
         <p className="text-base text-froozen space-grotesk">
           THE NEW STANDARDS IN NICOTINE
         </p>
 
-        <h1 className="text-6xl font-extrabold space-grotesk">One Brand.</h1>
+        <h1 className="sm:text-6xl text-5xl font-extrabold space-grotesk">
+          One Brand.
+        </h1>
 
-        <h1 className="text-6xl font-extrabold text-froozen space-grotesk">
+        <h1 className="sm:text-6xl text-5xl font-extrabold text-froozen space-grotesk">
           Every Format.
         </h1>
         <p className="text-white text-lg">
@@ -34,7 +36,7 @@ function Hero() {
         </div>
       </div>
       {/* bottom-content */}
-      <div className="absolute bottom-0 z-10 w-full flex items-center justify-between gap-10 bg-black/85 backdrop-blur-3xl py-12 px-16">
+      <div className="absolute bottom-0 z-10 w-full hidden lg:flex items-center justify-between gap-10 bg-black/85 backdrop-blur-3xl py-12 px-16">
         <div className="flex flex-col gap-2">
           <p className="text-froozen text-sm space-grotesk">YOUR FIRST MOVE</p>
           <p className="text-white text-xl space-grotesk">

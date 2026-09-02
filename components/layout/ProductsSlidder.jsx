@@ -34,7 +34,7 @@ function ProductSliderButtons() {
 
 function ProductsSlidder({ shortTitle, heading1, heading2 }) {
   return (
-    <section className="flex flex-col px-16 py-12 bg-black text-white">
+    <section className="flex flex-col lg:px-16 px-5 py-12 bg-black text-white">
       <Carousel
         opts={{
           align: "start",
@@ -44,25 +44,32 @@ function ProductsSlidder({ shortTitle, heading1, heading2 }) {
         className="w-full"
       >
         {/* Heading */}
-        <div className="flex items-end justify-between gap-6 w-full mb-10">
-          <div className="flex flex-col gap-2">
+        <div className="flex sm:items-end items-center sm:justify-between justify-center gap-6 w-full mb-10">
+          <div className="flex flex-col sm:items-start items-center gap-2">
             <p className="text-sm text-froozen space-grotesk">{shortTitle}</p>
 
-            <p className="text-4xl font-extrabold space-grotesk">{heading1}</p>
+            <p className="sm:text-4xl text-3xl font-extrabold space-grotesk">
+              {heading1}
+            </p>
 
-            <p className="text-4xl font-extrabold text-froozen space-grotesk">
+            <p className="sm:text-4xl text-3xl font-extrabold text-froozen space-grotesk">
               {heading2}
             </p>
           </div>
 
           {/* Buttons */}
-          <ProductSliderButtons />
+          <div className="sm:block hidden">
+            <ProductSliderButtons />
+          </div>
         </div>
 
         {/* Cards */}
-        <CarouselContent className="-ml-4">
+        <CarouselContent className="-ml-4 sm:mb-0 mb-10">
           {cardsData.map((item, index) => (
-            <CarouselItem key={index} className="pl-4 basis-1/3">
+            <CarouselItem
+              key={index}
+              className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
+            >
               <ProductCard
                 img={item.img}
                 desc={item.desc}
@@ -73,6 +80,11 @@ function ProductsSlidder({ shortTitle, heading1, heading2 }) {
             </CarouselItem>
           ))}
         </CarouselContent>
+
+        {/* mobile-Buttons */}
+        <div className="sm:hidden flex justify-center w-full">
+          <ProductSliderButtons />
+        </div>
       </Carousel>
     </section>
   );

@@ -4,16 +4,18 @@ import { GoArrowUpRight } from "react-icons/go";
 
 function About() {
   return (
-    <div className="flex flex-col gap-10 px-16 py-12 bg-black text-white">
+    <div className="flex flex-col sm:gap-10 gap-7 lg:px-16 px-5 py-12 bg-black text-white">
       <div className="flex flex-col gap-2">
         <p className="text-sm text-froozen space-grotesk">ABOUT VUSELO</p>
-        <p className="text-4xl font-extrabold space-grotesk">One Considered</p>
-        <p className="text-4xl font-extrabold text-froozen space-grotesk">
+        <p className="sm:text-4xl text-3xl font-extrabold space-grotesk">
+          One Considered
+        </p>
+        <p className="sm:text-4xl text-3xl font-extrabold text-froozen space-grotesk">
           Collection.
         </p>
       </div>
-      <div className="flex gap-6 w-full">
-        <div className="w-[50%]">
+      <div className="flex md:flex-row flex-col gap-6 w-full">
+        <div className="md:w-[50%] w-full">
           {" "}
           <img
             src="/about.png"
@@ -21,14 +23,14 @@ function About() {
             alt=""
           />
         </div>
-        <div className="flex flex-col gap-4 w-[50%]">
-          <p className="text-lg">
+        <div className="flex flex-col gap-4 md:w-[50%] w-full">
+          <p className="sm:text-lg">
             We built VUSELO to bring clarity to a crowded shelf. Devices, pods
             and pouches, designed with the same intent: clean lines, reliable
             performance, and a ritual that feels considered down to the last
             detail.
           </p>
-          <p className="text-lg">
+          <p className="sm:text-lg">
             One shelf. One standard. Devices, pods, and pouches, built with the
             same intent — precision where it counts, restraint everywhere else.
             This is what a considered ritual looks like.

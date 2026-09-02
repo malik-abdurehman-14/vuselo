@@ -7,6 +7,7 @@ import { Button } from "../ui/Button";
 import Drawer from "../ui/Drawer";
 import { usePathname } from "next/navigation";
 import QuantityBtn from "../ui/QuantityBtn";
+import { RiMenuUnfoldLine } from "react-icons/ri";
 import { Search, ShoppingBag, UserRoundArrowLeft } from "lucide-react";
 
 function Navbar() {
@@ -14,7 +15,8 @@ function Navbar() {
   const isProductDetailsPage =
     pathname.startsWith("/product-details") ||
     ["/cart", "/checkout"].includes(pathname);
-  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [cartDrawerOpen, setCartDrawerOpen] = useState(false);
+  const [menuDrawerOpen, setMenuDrawerOpen] = useState(false);
 
   const navLinks = [
     { name: "Shop Devices", link: "/products" },
@@ -26,7 +28,8 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 z-50 w-full">
+      {/* desktop-nav */}
+      <nav className="hidden md:block fixed top-0 left-0 z-50 w-full">
         {isProductDetailsPage && (
           <div className="w-full flex justify-center bg-[#e82233] text-white py-1 px-4">
             <p className="text-sm space-grotesk">
@@ -35,7 +38,7 @@ function Navbar() {
             </p>
           </div>
         )}
-        <div className="flex items-center justify-between gap-4 px-16 py-6 bg-black backdrop-blur-3xl">
+        <div className="flex items-center justify-between gap-4 lg:px-16 px-5 py-6 bg-black backdrop-blur-3xl">
           {/* Logo */}
           <Link href="/">
             <Image
@@ -49,7 +52,7 @@ function Navbar() {
           </Link>
 
           {/* Navigation */}
-          <div className="flex items-center gap-10">
+          <div className="flex items-center lg:gap-10 gap-5">
             {navLinks.map((item, index) => (
               <Link
                 href={item.link}
@@ -62,13 +65,68 @@ function Navbar() {
           </div>
 
           {/* Icons */}
-          <div className="flex items-center gap-5 text-white">
+          <div className="flex items-center lg:gap-5 gap-3 text-white">
             <button className="cursor-pointer transition-opacity hover:opacity-70">
               <Search size={21} />
             </button>
 
             <button
-              onClick={() => setDrawerOpen(true)}
+              onClick={() => setCartDrawerOpen(true)}
+              className="relative cursor-pointer transition-opacity hover:opacity-70"
+            >
+              <ShoppingBag size={21} />
+
+              {/* Notification Dot */}
+              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-froozen border-2 border-black" />
+            </button>
+
+            <a
+              href="/login"
+              className="cursor-pointer transition-opacity hover:opacity-70"
+            >
+              <UserRoundArrowLeft size={21} />
+            </a>
+          </div>
+        </div>
+      </nav>
+      {/* mobile-nav */}
+      <nav className="block md:hidden fixed top-0 left-0 z-50 w-full">
+        {isProductDetailsPage && (
+          <div className="w-full flex justify-center bg-[#e82233] text-white py-1 px-4">
+            <p className="text-sm space-grotesk">
+              WARNING: This product contains nicotine. Nicotine is an addictive
+              chemical. Only for use by adults 18+
+            </p>
+          </div>
+        )}
+        <div className="flex items-center justify-between gap-4 lg:px-16 px-5 py-6 bg-black backdrop-blur-3xl">
+          {/* Icons */}
+          <div className="flex items-center gap-3 text-white">
+            <button
+              onClick={() => setMenuDrawerOpen(true)}
+              className="cursor-pointer transition-opacity hover:opacity-70"
+            >
+              <RiMenuUnfoldLine size={21} />
+            </button>
+            <button className="cursor-pointer transition-opacity hover:opacity-70">
+              <Search size={21} />
+            </button>
+          </div>
+          {/* Logo */}
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="VUSELO"
+              width={120}
+              height={60}
+              priority
+              className="h-auto"
+            />
+          </Link>
+          {/* Icons */}
+          <div className="flex items-center gap-3 text-white">
+            <button
+              onClick={() => setCartDrawerOpen(true)}
               className="relative cursor-pointer transition-opacity hover:opacity-70"
             >
               <ShoppingBag size={21} />
@@ -87,8 +145,43 @@ function Navbar() {
         </div>
       </nav>
 
-      {/* side-drawer */}
-      <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)}>
+      {/* mobile-menu-drawer */}
+      <Drawer
+        open={menuDrawerOpen}
+        onClose={() => setMenuDrawerOpen(false)}
+        side="left"
+      >
+        <div className="h-full flex flex-col bg-black text-white">
+          {/* Header */}
+          <div className="flex items-center justify-between p-6 border-b border-white/10">
+            <h2 className="text-2xl font-bold space-grotesk">Menu</h2>
+
+            <button
+              onClick={() => setMenuDrawerOpen(false)}
+              className="text-white text-2xl cursor-pointer hover:opacity-70"
+            >
+              ×
+            </button>
+          </div>
+
+          {/* Navigation */}
+          <div className="flex flex-col p-6">
+            {navLinks.map((item, index) => (
+              <Link
+                key={index}
+                href={item.link}
+                onClick={() => setMenuDrawerOpen(false)}
+                className="py-4 text-lg border-b border-white/10 transition-opacity hover:opacity-60"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </Drawer>
+
+      {/* cart-drawer */}
+      <Drawer open={cartDrawerOpen} onClose={() => setCartDrawerOpen(false)}>
         <div className="relative h-full flex flex-col">
           {/* Scrollable Content */}
           <div className="flex-1 overflow-y-auto pb-[140px]">

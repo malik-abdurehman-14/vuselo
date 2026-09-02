@@ -15,69 +15,120 @@ function Footer() {
     { name: "Support", link: "/" },
   ];
   return (
-    <footer className="bg-black text-white w-full px-16 py-14 flex justify-between gap-10 h-[480px]">
-      <div className="flex flex-col gap-8 justify-between w-[45%]">
-        <div>
-          <img src="/logo.png" alt="" />
-          <p className="text-base space-grotesk my-6">
-            VUSELO electronic cigarettes and nicotine pouches may be hazardous
-            to health and contain nicotine, which is addictive.{" "}
-            <span className="text-red-500">
-              WARNING: This product contains nicotine. Nicotine is an addictive
-              chemical.
-            </span>
-          </p>
-          <a className="text-froozen text-base" href="/">
-            More about us .
-          </a>
-        </div>
-        <div className="flex items-end gap-8 justify-between">
-          <div className="grid grid-cols-2 gap-2">
-            <a
-              href="/"
-              className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3"
-            >
-              <FaTwitter size={16} />
-            </a>
-            <a
-              href="/"
-              className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3"
-            >
-              <FaFacebook size={16} />
-            </a>
-            <a
-              href="/"
-              className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3"
-            >
-              <RiSendInsFill size={16} />
-            </a>
-            <a
-              href="/"
-              className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3"
-            >
-              <AiFillInstagram size={16} />
+    <>
+      <footer className="hidden lg:flex bg-black text-white w-full lg:px-16 px-5 py-14 justify-between gap-10 h-[480px]">
+        <div className="flex flex-col gap-8 justify-between w-[45%]">
+          <div>
+            <img src="/logo.png" alt="" />
+            <p className="text-base space-grotesk my-6">
+              VUSELO electronic cigarettes and nicotine pouches may be hazardous
+              to health and contain nicotine, which is addictive.{" "}
+              <span className="text-red-500">
+                WARNING: This product contains nicotine. Nicotine is an
+                addictive chemical.
+              </span>
+            </p>
+            <a className="text-froozen text-base" href="/">
+              More about us .
             </a>
           </div>
-          <p className="text-base w-[170px]">
-            © 2026 — Copyright All Rights reserved
-          </p>
+          <div className="flex items-end gap-8 justify-between">
+            <div className="grid grid-cols-2 gap-2">
+              <a
+                href="/"
+                className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3"
+              >
+                <FaTwitter size={16} />
+              </a>
+              <a
+                href="/"
+                className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3"
+              >
+                <FaFacebook size={16} />
+              </a>
+              <a
+                href="/"
+                className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3"
+              >
+                <RiSendInsFill size={16} />
+              </a>
+              <a
+                href="/"
+                className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3"
+              >
+                <AiFillInstagram size={16} />
+              </a>
+            </div>
+            <p className="text-base w-[170px]">
+              © 2026 — Copyright All Rights reserved
+            </p>
+          </div>
         </div>
-      </div>
-      {/* right-side */}
-      <div className="flex flex-col gap-8 justify-between w-[50%]">
-        <div className="flex items-center justify-between">
-          {links.map((item, index) => (
-            <Link
-              href={item.link}
-              key={index}
-              className="text-base text-white transition-colors hover:text-gray-300"
-            >
-              {item.name}
-            </Link>
-          ))}
+        {/* right-side */}
+        <div className="flex flex-col gap-8 justify-between w-[50%]">
+          <div className="flex items-center justify-between">
+            {links.map((item, index) => (
+              <Link
+                href={item.link}
+                key={index}
+                className="text-base text-white transition-colors hover:text-gray-300"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+          <div className="flex items-end justify-between gap-8">
+            <div className="flex flex-col gap-5">
+              <div>
+                <p className="text-lg space-grotesk">Contact Us</p>
+                <p>+1 (999) 888-77-66</p>
+                <p className="text-base">hello@logoipsum.com</p>
+              </div>
+              <div>
+                <p className="text-lg space-grotesk">Location</p>
+                <p>483920, UK,</p>
+                <p className="text-base">Myasnitskaya 22/2/5, Office 4</p>
+              </div>
+            </div>
+            <div>
+              <p className="text-froozen space-grotesk">Subcription</p>
+              <div className="flex items-center border border-gray-100 rounded-md w-[300px] overflow-hidden mt-2">
+                <input
+                  type="email"
+                  placeholder="E-MAIL"
+                  className="flex-1 bg-transparent py-1 px-3 text-white outline-none space-grotesk placeholder:text-white"
+                />
+
+                {/* Arrow */}
+                <button
+                  type="button"
+                  className="flex items-center justify-center px-3 border-l border-gray-500 cursor-pointer text-froozen transition-colors duration-300"
+                >
+                  <IoIosArrowForward size={16} />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex items-end justify-between gap-8">
-          <div className="flex flex-col gap-5">
+      </footer>
+      {/* mobile-nav */}
+      <footer className="lg:hidden flex md:flex-row flex-col bg-black text-white w-full lg:px-16 px-5 py-14 justify-between gap-10">
+        <div className="flex flex-col gap-8 justify-between md:w-[50%] w-full">
+          <div>
+            <img src="/logo.png" alt="" />
+            <p className="text-base space-grotesk my-6">
+              VUSELO electronic cigarettes and nicotine pouches may be hazardous
+              to health and contain nicotine, which is addictive.{" "}
+              <span className="text-red-500">
+                WARNING: This product contains nicotine. Nicotine is an
+                addictive chemical.
+              </span>
+            </p>
+            <a className="text-froozen text-base" href="/">
+              More about us .
+            </a>
+          </div>
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-8">
             <div>
               <p className="text-lg space-grotesk">Contact Us</p>
               <p>+1 (999) 888-77-66</p>
@@ -89,9 +140,12 @@ function Footer() {
               <p className="text-base">Myasnitskaya 22/2/5, Office 4</p>
             </div>
           </div>
+        </div>
+        {/* right-side */}
+        <div className="flex flex-col gap-8 justify-between md:w-[50%] w-full">
           <div>
             <p className="text-froozen space-grotesk">Subcription</p>
-            <div className="flex items-center border border-gray-100 rounded-md w-[300px] overflow-hidden mt-2">
+            <div className="flex items-center border border-gray-100 rounded-md w-full overflow-hidden mt-2">
               <input
                 type="email"
                 placeholder="E-MAIL"
@@ -107,9 +161,40 @@ function Footer() {
               </button>
             </div>
           </div>
+          <div className="flex flex-col-reverse sm:flex-row sm:items-end gap-8 justify-between">
+            <p className="text-base sm:w-[170px]">
+              © 2026 — Copyright All Rights reserved
+            </p>
+            <div className="grid sm:grid-cols-2 grid-cols-4 gap-2">
+              <a
+                href="/"
+                className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3 w-fit"
+              >
+                <FaTwitter size={16} />
+              </a>
+              <a
+                href="/"
+                className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3 w-fit"
+              >
+                <FaFacebook size={16} />
+              </a>
+              <a
+                href="/"
+                className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3 w-fit"
+              >
+                <RiSendInsFill size={16} />
+              </a>
+              <a
+                href="/"
+                className="text-black bg-froozen rounded-full hover:text-froozen hover:bg-black border border-black hover:border-froozen p-3 w-fit"
+              >
+                <AiFillInstagram size={16} />
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
 

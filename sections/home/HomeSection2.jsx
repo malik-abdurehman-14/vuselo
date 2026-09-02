@@ -16,14 +16,14 @@ function HomeSection2() {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 px-16 py-12 bg-black text-white">
-      <div className="flex items-end justify-between gap-6 w-full">
+    <div className="flex flex-col gap-10 lg:px-16 px-5 py-12 bg-black text-white">
+      <div className="flex sm:flex-row flex-col sm:items-end justify-between gap-5 w-full">
         <div className="flex flex-col gap-2">
           <p className="text-sm text-froozen space-grotesk">FIND YOUR FORMAT</p>
-          <p className="text-4xl font-extrabold space-grotesk">
+          <p className="sm:text-4xl text-3xl font-extrabold space-grotesk">
             Made For The Way
           </p>
-          <p className="text-4xl font-extrabold text-froozen space-grotesk">
+          <p className="sm:text-4xl text-3xl font-extrabold text-froozen space-grotesk">
             You Choose.
           </p>
         </div>
@@ -32,11 +32,11 @@ function HomeSection2() {
         </a>
       </div>
       {/* cards */}
-      <div className="flex gap-5 w-full">
+      <div className="flex md:flex-row flex-col gap-5 w-full">
         {cardsData.map((item, index) => (
           <div
             key={index}
-            className="group relative w-full h-[500px] overflow-hidden rounded-xl cursor-pointer"
+            className="group relative w-full md:h-[500px] h-[400px] overflow-hidden rounded-xl cursor-pointer"
           >
             {/* Background Image */}
             <img
@@ -52,7 +52,7 @@ function HomeSection2() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
 
             {/* Content */}
-            <div className="absolute inset-x-0 bottom-0 p-8">
+            <div className="absolute inset-x-0 bottom-0 sm:p-8 p-4">
               <div className="flex items-end justify-between gap-4">
                 {/* Text */}
                 <div className="flex flex-col gap-2">

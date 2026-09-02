@@ -79,24 +79,24 @@ function Testimonials() {
   ];
 
   return (
-    <section className="flex flex-col gap-10 py-16 bg-black text-white">
+    <section className="flex flex-col gap-10 sm:p-0 p-5 py-16 bg-black text-white">
       {/* Heading */}
       <div className="flex flex-col items-center justify-center gap-2">
-        <p className="text-4xl font-extrabold space-grotesk">
+        <p className="sm:text-4xl text-3xl text-center font-extrabold space-grotesk">
           Don't Take our word for it.
         </p>
 
-        <p className="text-4xl text-froozen font-extrabold space-grotesk">
+        <p className="sm:text-4xl text-3xl text-center text-froozen font-extrabold space-grotesk">
           Over 100+ people trust us.
         </p>
       </div>
 
       {/* Slider */}
       <div className="relative w-full overflow-hidden">
-        <div className="pointer-events-none absolute left-0 top-0 z-30 h-full w-12 bg-gradient-to-r from-black via-black/80 to-transparent" />
+        <div className="pointer-events-none absolute left-0 top-0 z-30 h-full w-12 md:bg-gradient-to-r from-black via-black/80 to-transparent" />
 
         {/* Right shade */}
-        <div className="pointer-events-none absolute right-0 top-0 z-30 h-full w-12 bg-gradient-to-l from-black via-black/80 to-transparent" />
+        <div className="pointer-events-none absolute right-0 top-0 z-30 h-full w-12 md:bg-gradient-to-l from-black via-black/80 to-transparent" />
         <Carousel
           opts={{
             align: "start",
@@ -107,16 +107,19 @@ function Testimonials() {
         >
           <CarouselContent className="mb-10">
             {data.map((item, index) => (
-              <CarouselItem key={index} className="pl-4 basis-1/3">
+              <CarouselItem
+                key={index}
+                className="pl-4 basis-full md:basis-1/2 lg:basis-1/3"
+              >
                 {/* Card */}
-                <div className="relative flex h-full min-h-[230px] flex-col justify-between gap-4 overflow-hidden rounded-lg bg-froozen p-6">
+                <div className="relative flex h-full sm:w-auto w-full min-h-[230px] flex-col justify-between gap-4 overflow-hidden rounded-lg bg-froozen p-6">
                   {/* Overlay */}
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-black/30" />
 
                   {/* Content */}
                   <div className="relative z-10 flex h-full flex-col justify-between gap-8">
                     {/* Description */}
-                    <p className="text-lg space-grotesk text-white">
+                    <p className="sm:text-lg text-base space-grotesk text-white">
                       {item.desc}
                     </p>
 
@@ -125,13 +128,13 @@ function Testimonials() {
                       {/* User */}
                       <div className="flex items-center gap-2">
                         <img
-                          className="h-10 w-10 rounded-full object-cover"
+                          className="sm:h-10 h-8 sm:w-10 w-8 rounded-full object-cover"
                           src={item.img}
                           alt={item.name}
                         />
 
                         <div>
-                          <p className="text-lg font-bold space-grotesk">
+                          <p className="sm:text-lg text-base font-bold space-grotesk">
                             {item.name}
                           </p>
 

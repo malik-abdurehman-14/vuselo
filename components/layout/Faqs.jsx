@@ -42,12 +42,12 @@ function Faqs() {
   };
 
   return (
-    <div className="flex flex-col gap-16 px-16 py-12 bg-black text-white">
+    <div className="flex flex-col md:gap-16 gap-10 lg:px-16 px-5 py-12 bg-black text-white">
       {/* Heading */}
       <div className="flex flex-col items-center justify-center gap-2">
         <p className="text-sm text-froozen space-grotesk">HELP CENTER</p>
 
-        <p className="text-5xl font-extrabold space-grotesk">
+        <p className="sm:text-5xl text-3xl font-extrabold space-grotesk">
           Frequently <span className="text-froozen">Asked</span>
         </p>
       </div>
@@ -62,10 +62,10 @@ function Faqs() {
               {/* Question */}
               <button
                 onClick={() => handleToggle(index)}
-                className="w-full flex items-center justify-between gap-10 pb-3 text-left cursor-pointer"
+                className="w-full flex items-center justify-between gap-8 pb-3 text-left cursor-pointer"
               >
                 <p
-                  className={`text-lg space-grotesk transition-colors duration-300 ${
+                  className={`sm:text-lg text-base space-grotesk transition-colors duration-300 ${
                     isActive ? "text-froozen" : "text-white"
                   }`}
                 >
@@ -86,7 +86,9 @@ function Faqs() {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="text-base pb-4 pr-10">{item.desc}</p>
+                  <p className="sm:text-base text-sm pb-4 sm:pr-10">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             </div>
