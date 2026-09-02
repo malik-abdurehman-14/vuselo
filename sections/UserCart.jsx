@@ -9,7 +9,7 @@ import { CiDeliveryTruck } from "react-icons/ci";
 
 function UserCart() {
   return (
-    <div className="flex flex-col text-white px-16 bg-black gap-10 py-14 pt-36 w-full">
+    <div className="flex flex-col text-white lg:px-16 px-5 bg-black sm:gap-10 gap-8 py-14 pt-36 w-full">
       <div>
         <a
           href="/products"
@@ -18,15 +18,15 @@ function UserCart() {
           <FaArrowLeftLong size={12} />
           Continue shopping
         </a>
-        <h1 className="text-5xl font-extrabold space-grotesk mt-3">
+        <h1 className="sm:text-5xl text-3xl font-extrabold space-grotesk mt-3">
           Your Cart <span className="text-gray-500 text-4xl">(2 items)</span>
         </h1>
       </div>
-      <div className="flex gap-10 w-full">
-        <div className="flex flex-col gap-4 w-[70%]">
+      <div className="flex lg:flex-row flex-col xl:gap-10 lg:gap-5 gap-8 w-full">
+        <div className="flex flex-col gap-4 lg:w-[70%] w-full">
           {/* box */}
-          <div className="flex items-center gap-8 justify-between p-4 rounded-md border border-gray-700">
-            <div className="flex items-center gap-3">
+          <div className="flex md:flex-row flex-col md:items-center gap-8 justify-between p-4 rounded-md border border-gray-700">
+            <div className="flex sm:flex-row flex-col sm:items-center items-start gap-3">
               <img
                 className="h-[90px] object-contain rounded-md"
                 src="/sec2-1.png"
@@ -40,18 +40,20 @@ function UserCart() {
                 <p className="text-froozen space-grotesk">8mg strength .</p>
               </div>
             </div>
-            <div className="flex items-center gap-7">
-              <QuantityBtn />
-              <div>
-                <p className="text-sm text-gray-600">Unit: £4.49</p>
-                <p className="text-lg text-end">£13.47</p>
+            <div className="flex sm:flex-row flex-col-reverse items-center md:jusity-end justify-between sm:gap-7 gap-4 md:w-auto w-full">
+              <QuantityBtn className="sm:w-auto w-full" />
+              <div className="flex sm:justify-end justify-between items-center sm:gap-7 gap-4 sm:w-auto w-full">
+                <div>
+                  <p className="text-sm text-gray-600">Unit: £4.49</p>
+                  <p className="text-lg text-end">£13.47</p>
+                </div>
+                <p className="text-base text-red-500 cursor-pointer">Remove</p>
               </div>
-              <p className="text-base text-red-500 cursor-pointer">Remove</p>
             </div>
           </div>
           {/* box */}
-          <div className="flex items-center gap-8 justify-between p-4 rounded-md border border-gray-700">
-            <div className="flex items-center gap-3">
+          <div className="flex md:flex-row flex-col md:items-center gap-8 justify-between p-4 rounded-md border border-gray-700">
+            <div className="flex sm:flex-row flex-col sm:items-center items-start gap-3">
               <img
                 className="h-[90px] object-contain rounded-md"
                 src="/detail2.png"
@@ -67,13 +69,15 @@ function UserCart() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-7">
-              <QuantityBtn />
-              <div>
-                <p className="text-sm text-gray-600">Unit: £4.49</p>
-                <p className="text-lg text-end">£13.47</p>
+            <div className="flex sm:flex-row flex-col-reverse items-center md:jusity-end justify-between sm:gap-7 gap-4 md:w-auto w-full">
+              <QuantityBtn className="sm:w-auto w-full" />
+              <div className="flex sm:justify-end justify-between items-center sm:gap-7 gap-4 sm:w-auto w-full">
+                <div>
+                  <p className="text-sm text-gray-600">Unit: £4.49</p>
+                  <p className="text-lg text-end">£13.47</p>
+                </div>
+                <p className="text-base text-red-500 cursor-pointer">Remove</p>
               </div>
-              <p className="text-base text-red-500 cursor-pointer">Remove</p>
             </div>
           </div>
           {/* promo-code */}
@@ -99,8 +103,8 @@ function UserCart() {
           </div>
         </div>
         {/* order-summary */}
-        <div className="flex flex-col gap-3 items-center w-[30%]">
-          <div className="flex flex-col gap-2 p-5 rounded-md border border-gray-700">
+        <div className="flex flex-col gap-3 items-center lg:w-[30%] w-full">
+          <div className="flex flex-col gap-2 p-5 rounded-md border border-gray-700 lg:w-auto w-full">
             <h3 className="text-2xl font-extrabold space-grotesk">
               Order Summary
             </h3>
@@ -143,12 +147,12 @@ function UserCart() {
               padding="px-8 py-2"
             />
           </div>
-          <div className="flex items-center gap-3 text-froozen">
-            <p className="flex items-center gap-1 text-sm">
+          <div className="flex items-center sm:gap-3 gap-1 text-froozen">
+            <p className="flex items-center gap-1 sm:text-sm text-xs">
               <CiDeliveryTruck size={20} /> Free UK Next Day Delivery
             </p>
             <div className="border border-froozen h-full"></div>
-            <a href="/" className="flex items-center gap-2 text-sm">
+            <a href="/" className="flex items-center gap-2 sm:text-sm text-xs">
               <FaArrowLeftLong size={12} /> Hassle Free Returns
             </a>
           </div>
