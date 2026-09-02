@@ -161,7 +161,7 @@ function Footer() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col-reverse sm:flex-row sm:items-end gap-8 justify-between">
+          <div className="flex flex-col-reverse sm:flex-row sm:items-end items-center gap-8 justify-between">
             <p className="text-base sm:w-[170px]">
               © 2026 — Copyright All Rights reserved
             </p>
