@@ -13,7 +13,7 @@ function ProductsHero({ bgImg, heading, highlight, description }) {
         {/* Dark Overlay */}
         <div className="absolute inset-0 sm:bg-black/0 bg-black/50" />
 
-        <div className="absolute inset-0 flex items-center lg:pl-16 pl-5">
+        <div className="absolute inset-0 flex items-center lg:pl-16 pl-5 sm:mt-0 mt-10">
           <div className="flex max-w-lg flex-col sm:gap-5 gap-4 sm:text-black text-white">
             <h1 className="sm:text-6xl text-4xl font-extrabold space-grotesk">
               {heading}{" "}
