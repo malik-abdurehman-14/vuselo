@@ -10,7 +10,7 @@ import { FaClock } from "react-icons/fa6";
 
 function AboutHero() {
   return (
-    <section className="relative flex h-screen items-center overflow-hidden py-10 text-black">
+    <section className="relative flex h-screen items-center overflow-hidden py-10 md:text-black text-white">
       {/* Background Image */}
       <Image
         src="/aboutHero.png"
@@ -21,17 +21,19 @@ function AboutHero() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/20" />
+      <div className="absolute inset-0 md:bg-black/20 bg-black/50" />
 
       {/* Content */}
-      <div className="relative z-10 flex max-w-2xl flex-col gap-4 px-16">
-        <p className="text-base text-black space-grotesk">ABOUT VUSELO</p>
+      <div className="relative z-10 flex max-w-2xl flex-col gap-4 lg:px-16 px-5">
+        <p className="text-base md:text-black text-white space-grotesk">
+          ABOUT VUSELO
+        </p>
 
-        <h1 className="text-6xl font-extrabold space-grotesk">
+        <h1 className="sm:text-6xl text-4xl font-extrabold space-grotesk">
           One Platform. Two Brands You
         </h1>
 
-        <h1 className="text-6xl font-extrabold text-white space-grotesk">
+        <h1 className="sm:text-6xl text-4xl font-extrabold md:text-white text-froozen space-grotesk">
           Already Trust.
         </h1>
         <p className="text-lg">
