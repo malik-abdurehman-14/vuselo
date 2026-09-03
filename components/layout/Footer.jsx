@@ -8,11 +8,11 @@ import Link from "next/link";
 
 function Footer() {
   const links = [
-    { name: "Shop Devices", link: "/" },
-    { name: "Shop Pouches", link: "/" },
-    { name: "Subscribe & Save", link: "/" },
-    { name: "Offers", link: "/" },
-    { name: "Support", link: "/" },
+    { name: "All Products", link: "/products" },
+    { name: "Terms & Conditions", link: "/terms-conditions" },
+    { name: "Legal", link: "/legal" },
+    { name: "FAQS", link: "/faqs" },
+    { name: "Contact", link: "/contact-us" },
   ];
   return (
     <>
