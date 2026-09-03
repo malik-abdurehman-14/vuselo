@@ -6,7 +6,7 @@ function AuthLayout({ children }) {
   return (
     <section className="min-h-screen bg-black text-white flex gap-8">
       {/* Left Side */}
-      <div className="w-[50%] h-full py-8 pl-8">
+      <div className="hidden lg:flex w-[50%] h-full py-8 pl-8">
         <Link
           href="/"
           className="relative overflow-hidden h-full rounded-[50px]"
@@ -23,7 +23,7 @@ function AuthLayout({ children }) {
       </div>
 
       {/* Right Side */}
-      <div className="w-[50%] flex items-center justify-center px-8 py-16">
+      <div className="lg:w-[50%] w-full flex items-center justify-center sm:px-8 px-5 sm:py-16 py-12">
         <div className="w-full">{children}</div>
       </div>
     </section>

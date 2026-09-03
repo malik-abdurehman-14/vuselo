@@ -9,11 +9,11 @@ function page() {
   return (
     <>
       <Navbar />
-      <section className="bg-white text-black flex flex-col gap-14 pt-40">
-        <h1 className="text-5xl font-extrabold space-grotesk text-center">
+      <section className="bg-white text-black flex flex-col gap-14 sm:pt-40 pt-28">
+        <h1 className="sm:text-5xl text-4xl font-extrabold space-grotesk text-center">
           Blogs
         </h1>
-        <div className="bg-gray-100 py-12 px-16 w-full grid grid-cols-3 gap-6">
+        <div className="bg-gray-100 py-12 lg:px-16 px-5 w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
           {blogsData.map((item, index) => (
             <BlogCard
               key={index}

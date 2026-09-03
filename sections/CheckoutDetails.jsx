@@ -8,9 +8,9 @@ function CheckoutDetails() {
   const [deliveryMethod, setDeliveryMethod] = useState("standard");
 
   return (
-    <div className="flex text-white px-16 bg-black gap-10 py-14 pt-36 w-full">
+    <div className="flex lg:flex-row flex-col text-white lg:px-16 px-5 bg-black gap-10 py-14 pt-36 w-full">
       {/* left-side */}
-      <div className="flex flex-col gap-10 w-[65%]">
+      <div className="flex flex-col gap-10 lg:w-[65%] w-full">
         {/* alert */}
         <div className="bg-[#E63946] rounded-lg p-5">
           <p>
@@ -22,11 +22,11 @@ function CheckoutDetails() {
           </p>
         </div>
         {/* delivery-details */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col sm:gap-5 gap-3">
           <p className="text-3xl font-extrabold space-grotesk">
             Delivery Details
           </p>
-          <div className="flex items-center gap-4 w-full">
+          <div className="flex items-center sm:gap-4 gap-3 w-full">
             <div className="w-full">
               <p>First Name</p>
               <Input
@@ -63,7 +63,7 @@ function CheckoutDetails() {
               className="mt-1"
             />
           </div>
-          <div className="flex items-center gap-4 w-full">
+          <div className="flex items-center sm:gap-4 gap-3 w-full">
             <div className="w-full">
               <p>City</p>
               <Input type="text" placeholder="Enter city" className="mt-1" />
@@ -94,7 +94,7 @@ function CheckoutDetails() {
           </div>
         </div>
         {/* delivery-method */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col sm:gap-5 gap-3">
           <p className="text-3xl font-extrabold space-grotesk">
             Delivery Method
           </p>
@@ -167,23 +167,27 @@ function CheckoutDetails() {
             </p>
           </div>
           {/* points */}
-          <div className="flex items-center justify-between w-full gap-5">
+          <div className="flex items-center justify-between w-full sm:gap-5 gap-2">
             <div className="flex items-center text-froozen">
               <BsDot size={32} />
-              <p className="text-white text-sm">Money-back guarantee</p>
+              <p className="text-white sm:text-sm text-xs">
+                Money-back guarantee
+              </p>
             </div>
             <div className="flex items-center text-froozen">
               <BsDot size={32} />
-              <p className="text-white text-sm">Price match promise</p>
+              <p className="text-white sm:text-sm text-xs">
+                Price match promise
+              </p>
             </div>
             <div className="flex items-center text-froozen">
               <BsDot size={32} />
-              <p className="text-white text-sm">Free Returns</p>
+              <p className="text-white sm:text-sm text-xs">Free Returns</p>
             </div>
           </div>
         </div>
         {/* subscription-card */}
-        <div className="flex items-center justify-between p-5 rounded-lg border border-gray-600">
+        <div className="flex sm:flex-row flex-col gap-3 items-center justify-between p-5 rounded-lg border border-gray-600">
           <div>
             <p className="text-xl font-bold">
               Turn this into a subscription and save 15%
@@ -192,16 +196,17 @@ function CheckoutDetails() {
               Easily adjust or cancel anytime.
             </p>
           </div>
-          <div>
+          <div className="sm:w-auto w-full">
             <Button
               title="Add Subscription"
               variant="light"
               padding="py-1 px-4"
+              width="w-auto w-full"
             />
           </div>
         </div>
         {/* payment-card */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col sm:gap-5 gap-3">
           <p className="text-3xl font-extrabold space-grotesk">Payment</p>
           <div className="w-full">
             <p>Card Number</p>
@@ -211,7 +216,7 @@ function CheckoutDetails() {
               className="mt-1"
             />
           </div>
-          <div className="flex items-center gap-4 w-full">
+          <div className="flex items-center sm:gap-4 gap-3 w-full">
             <div className="w-full">
               <p>Expiry Date</p>
               <Input type="text" placeholder="MM / YY" className="mt-1" />
@@ -239,7 +244,7 @@ function CheckoutDetails() {
         </div>
       </div>
       {/* right-summary */}
-      <div className="sticky top-32 flex flex-col gap-2 p-5 rounded-md border border-gray-700 w-[35%] h-fit">
+      <div className="sticky top-32 flex flex-col gap-2 p-5 rounded-md border border-gray-700 lg:w-[35%] w-full h-fit">
         <h3 className="text-2xl font-extrabold space-grotesk">Order Summary</h3>
         {/* product-overview */}
         <div className="flex items-center gap-5 justify-between p-2 rounded-md border border-gray-700">

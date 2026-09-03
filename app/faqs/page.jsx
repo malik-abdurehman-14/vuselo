@@ -45,11 +45,11 @@ function page() {
   return (
     <>
       <Navbar />
-      <section className="bg-white text-black flex flex-col gap-14 pt-40">
-        <h1 className="text-5xl font-extrabold space-grotesk text-center">
+      <section className="bg-white text-black flex flex-col sm:gap-14 gap-10 sm:pt-40 pt-28">
+        <h1 className="sm:text-5xl text-3xl font-extrabold space-grotesk text-center">
           Frequently Asked Question
         </h1>
-        <div className="bg-gray-100 py-12 px-16 w-full flex flex-col gap-8">
+        <div className="bg-gray-100 sm:py-12 py-8 lg:px-16 px-5 w-full flex flex-col gap-8">
           {/* terms */}
           <div className="flex flex-col gap-4 w-full">
             {faqs.map((item, index) => {
@@ -69,7 +69,7 @@ function page() {
                       </span>
 
                       {/* Title */}
-                      <p className="text-lg font-extrabold space-grotesk text-black transition-colors duration-300">
+                      <p className="sm:text-lg text-base font-extrabold space-grotesk text-black transition-colors duration-300">
                         {item.title}
                       </p>
                     </div>
@@ -88,7 +88,7 @@ function page() {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="text-sm pb-4 pr-10 whitespace-pre-line">
+                      <p className="sm:text-sm text-xs pb-4 pr-10 whitespace-pre-line">
                         {item.desc}
                       </p>
                     </div>

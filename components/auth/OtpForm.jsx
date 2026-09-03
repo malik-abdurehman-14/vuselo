@@ -27,12 +27,12 @@ function OtpForm() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 w-full">
-      <img className="w-[170px]" src="/logo.png" alt="" />
+    <div className="flex flex-col items-center gap-4 w-full px-5">
+      <img className="sm:w-[170px] w-[130px]" src="/logo.png" alt="" />
       <div className="flex flex-col gap-5 w-full">
         {/* Heading */}
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold space-grotesk">
+          <h1 className="sm:text-4xl text-2xl font-extrabold space-grotesk">
             Verify Your Email
           </h1>
 
@@ -43,7 +43,7 @@ function OtpForm() {
         </div>
 
         {/* OTP Inputs */}
-        <div className="flex items-center justify-center gap-3">
+        <div className="flex items-center justify-center sm:gap-3 gap-2">
           {otp.map((digit, index) => (
             <input
               key={index}
@@ -54,7 +54,7 @@ function OtpForm() {
               value={digit}
               onChange={(e) => handleChange(e.target.value, index)}
               onKeyDown={(e) => handleKeyDown(e, index)}
-              className="w-14 h-14 rounded-xl border border-gray-700 bg-black/20 text-white text-center text-xl font-bold outline-none transition-all focus:border-froozen focus:ring-1 focus:ring-froozen"
+              className="sm:w-14 w-10 sm:h-14 h-10  rounded-xl border border-gray-700 bg-black/20 text-white text-center text-xl font-bold outline-none transition-all focus:border-froozen focus:ring-1 focus:ring-froozen"
             />
           ))}
         </div>
@@ -64,7 +64,7 @@ function OtpForm() {
           title="Verify Code"
           variant="light"
           width="w-full"
-          padding="py-4"
+          padding="sm:py-4 py-2"
           className="rounded-xl text-base font-bold"
         />
 

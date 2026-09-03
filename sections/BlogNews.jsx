@@ -27,11 +27,11 @@ function BlogNews() {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 px-16 pt-6 pb-14 bg-gray-50 text-black">
-      <p className="text-5xl font-extrabold space-grotesk">
+    <div className="flex flex-col sm:gap-10 gap-7 lg:px-16 px-5 pt-6 pb-14 bg-gray-50 text-black">
+      <p className="sm:text-5xl text-3xl font-extrabold space-grotesk">
         News from <span className="text-froozen">Vuselo</span>
       </p>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
         {blogsData.map((item, index) => (
           <BlogCard
             key={index}

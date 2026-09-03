@@ -7,11 +7,11 @@ function page() {
   return (
     <>
       <Navbar />
-      <section className="bg-white text-black flex flex-col gap-14 pt-40">
-        <h1 className="text-5xl font-extrabold space-grotesk text-center">
+      <section className="bg-white text-black flex flex-col gap-14 sm:pt-40 pt-28">
+        <h1 className="sm:text-5xl text-3xl font-extrabold space-grotesk text-center">
           Contact Us
         </h1>
-        <div className="bg-gray-100 py-12 px-16 w-full flex flex-col gap-6">
+        <div className="bg-gray-100 sm:py-12 py-8 lg:px-16 px-5 w-full flex flex-col md:gap-6 gap-4">
           {/* box */}
           <div className="bg-white rounded-lg p-5 flex flex-col gap-3">
             <div>
@@ -21,7 +21,7 @@ function page() {
                 questions:
               </p>
             </div>
-            <div className="flex items-center justify-between gap-8">
+            <div className="flex md:flex-nowrap flex-wrap items-center justify-between gap-8">
               <div>
                 <p className="text-base font-semibold">Live Chat</p>
                 <p className="text-sm">
@@ -52,7 +52,7 @@ function page() {
             </p>
           </div>
           {/* box-2 */}
-          <div className="flex justify-between gap-6">
+          <div className="flex sm:flex-row flex-col justify-between md:gap-6 gap-4">
             <div className="bg-white rounded-lg p-5 flex flex-col gap-1 w-full">
               <p className="text-base font-bold">Order & Delivery Help</p>
               <p className="text-sm">Track an active order</p>
@@ -69,7 +69,7 @@ function page() {
             </div>
           </div>
           {/* box-3 */}
-          <div className="flex justify-between gap-6">
+          <div className="flex sm:flex-row flex-col justify-between md:gap-6 gap-4">
             <div className="bg-white rounded-lg p-5 flex flex-col gap-1 w-full">
               <p className="text-base font-bold">
                 Age Verification & Account Issues
@@ -96,7 +96,7 @@ function page() {
             </div>
           </div>
           {/* box-4 */}
-          <div className="flex justify-between gap-6">
+          <div className="flex sm:flex-row flex-col justify-between md:gap-6 gap-4">
             <div className="bg-white rounded-lg p-5 flex flex-col gap-1 w-full">
               <p className="text-base font-bold">Press & Media</p>
               <p className="text-sm">
@@ -116,7 +116,7 @@ function page() {
           {/* box-5 */}
           <div className="bg-white rounded-lg p-5 flex flex-col gap-3 w-full">
             <p className="text-base font-bold">Follow VUSELO</p>
-            <div className="flex items-center gap-3">
+            <div className="flex sm:flex-row flex-col-reverse items-center sm:gap-3 gap-2">
               <a href="#" className="text-bold space-grotesk">
                 Instagram
               </a>

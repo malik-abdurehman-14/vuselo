@@ -70,8 +70,8 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
         <div className="relative h-full flex flex-col">
           {/* Scrollable Content */}
           <div className="flex-1 overflow-y-auto pb-[140px]">
-            <div className="flex flex-col items-center justify-center gap-3 p-7 w-full">
-              <h2 className="text-3xl font-bold space-grotesk">
+            <div className="flex flex-col items-center justify-center gap-3 sm:p-7 p-5 w-full">
+              <h2 className="sm:text-3xl text-2xl font-bold space-grotesk">
                 Bright Spearmint
               </h2>
 
@@ -79,12 +79,12 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
 
               {/* Purchase Type */}
               <div className="flex flex-col gap-3 w-full mt-3">
-                <p className="text-xl font-bold">Purchase type:</p>
+                <p className="sm:text-xl text-lg font-bold">Purchase type:</p>
 
                 {/* One Time */}
                 <div
                   onClick={() => setPurchaseType("one-time")}
-                  className={`flex items-center justify-between border p-4 rounded-lg cursor-pointer transition-all group ${
+                  className={`flex sm:flex-row flex-col sm:items-center justify-between border sm:p-4 p-3 gap-2 rounded-lg cursor-pointer transition-all group ${
                     purchaseType === "one-time"
                       ? "bg-froozen/20 border-froozen"
                       : "border-gray-600 hover:bg-froozen/20 hover:border-froozen"
@@ -104,7 +104,7 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
                     </div>
 
                     <div>
-                      <p className="text-lg font-bold">One-Time</p>
+                      <p className="sm:text-lg text-base font-bold">One-Time</p>
 
                       <p className="text-gray-500 text-sm">
                         <span className="text-black font-bold">£5.00</span> per
@@ -114,7 +114,7 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
                   </div>
 
                   <p
-                    className={`font-bold text-xs p-2 rounded-md border ${
+                    className={`font-bold text-xs p-2 rounded-md border w-fit ${
                       purchaseType === "one-time"
                         ? "text-black bg-froozen border-white"
                         : "text-black border-froozen group-hover:bg-froozen"
@@ -127,7 +127,7 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
                 {/* Subscribe */}
                 <div
                   onClick={() => setPurchaseType("subscribe")}
-                  className={`flex items-center justify-between border p-4 rounded-lg cursor-pointer transition-all group ${
+                  className={`flex sm:flex-row flex-col gap-2 sm:items-center justify-between border sm:p-4 p-3 rounded-lg cursor-pointer transition-all group ${
                     purchaseType === "subscribe"
                       ? "bg-froozen/20 border-froozen"
                       : "border-gray-600 hover:bg-froozen/20 hover:border-froozen"
@@ -147,7 +147,9 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
                     </div>
 
                     <div>
-                      <p className="text-lg font-bold">Subscribe</p>
+                      <p className="sm:text-lg text-base font-bold">
+                        Subscribe
+                      </p>
 
                       <p className="text-gray-500 text-sm">
                         <span className="text-black font-bold">From £2.50</span>{" "}
@@ -157,7 +159,7 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
                   </div>
 
                   <p
-                    className={`font-bold text-xs p-2 rounded-md border ${
+                    className={`font-bold text-xs p-2 rounded-md border w-fit ${
                       purchaseType === "subscribe"
                         ? "text-black bg-froozen border-white"
                         : "text-black border-froozen group-hover:bg-froozen"
@@ -171,7 +173,7 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
               {/* Pouch Size */}
               <div className="flex flex-col gap-3 w-full mt-3">
                 <div className="flex items-center justify-between">
-                  <p className="text-xl font-bold">Pouch Size:</p>
+                  <p className="sm:text-xl text-lg font-bold">Pouch Size:</p>
 
                   <FaRegCircleQuestion />
                 </div>
@@ -197,7 +199,9 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
               {/* Nicotine Strength */}
               <div className="flex flex-col gap-3 w-full mt-3">
                 <div className="flex items-center justify-between">
-                  <p className="text-xl font-bold">Nicotine Strength:</p>
+                  <p className="sm:text-xl text-lg font-bold">
+                    Nicotine Strength:
+                  </p>
 
                   <FaRegCircleQuestion />
                 </div>
@@ -222,11 +226,11 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
 
               {/* Saving */}
               <div className="flex flex-col gap-3 w-full mt-3">
-                <p className="text-xl font-bold">
+                <p className="sm:text-xl text-lg font-bold">
                   Save up to 40% with multibuy
                 </p>
 
-                <div className="flex items-center gap-3">
+                <div className="grid sm:grid-cols-4 grid-cols-2 items-center gap-3">
                   {[
                     ["+3", "Save 15%"],
                     ["+5", "Save 20%"],
@@ -251,22 +255,22 @@ function ProductCard({ img, desc, title, price, bgColor = "bg-black" }) {
             </div>
 
             {/* Highlight */}
-            <div className="bg-froozen font-bold text-center w-full p-3">
+            <div className="bg-froozen sm:font-bold text-center w-full sm:p-3 p-2">
               UP TO 40% OFF WITH MULTIBUY
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="absolute bottom-0 w-full bg-white shadow-[0_-8px_20px_rgba(0,0,0,0.15)] p-5 flex flex-col gap-3 items-center">
+        <div className="absolute bottom-0 w-full bg-white shadow-[0_-8px_20px_rgba(0,0,0,0.15)] sm:p-5 p-4 flex flex-col gap-3 items-center">
           <div className="flex items-center gap-3 w-full">
-            <QuantityBtn variant="dark" />
+            <QuantityBtn variant="dark" className="sm:p-3 p-2" />
 
             <Button
               title="ADD TO CART"
               variant="light"
               width="w-[70%]"
-              padding="p-3"
+              padding="sm:p-3 p-2"
             />
           </div>
 

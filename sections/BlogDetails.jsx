@@ -10,12 +10,12 @@ function BlogDetails() {
       {/* img-top */}
       <div className="">
         <img
-          className="h-[600px] w-full object-cover object-[center_40%]"
+          className="md:h-[600px] h-[400px] w-full object-cover object-[center_40%]"
           src="/about2.png"
           alt=""
         />
       </div>
-      <div className="flex justify-center w-full px-16 pb-14 bg-gray-50">
+      <div className="flex justify-center w-full md:px-16 px-4 pb-14 bg-gray-50">
         {/* details-card */}
         <div className="w-full bg-[#FAFAFA] rounded-xl p-8 -mt-32 flex flex-col gap-3 shadow-2xl">
           <div className="bg-froozen text-black py-1 px-4 text-xs rounded-md w-fit">
@@ -24,7 +24,7 @@ function BlogDetails() {
           <p className="text-2xl space-grotesk font-bold group-hover:text-froozen">
             Battery Care, Made Simple.
           </p>
-          <div className="text-xs flex items-center gap-2">
+          <div className="text-xs flex items-center sm:gap-2">
             <p>VUSELO Product Team . </p>
             <p>18 June 2025 . </p>
             <p>4 min read</p>
