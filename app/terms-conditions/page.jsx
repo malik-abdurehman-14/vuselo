@@ -64,13 +64,13 @@ VUSELO reserves the right to request proof of age at any point, including at the
   return (
     <>
       <Navbar />
-      <section className="bg-white text-black flex flex-col gap-14 pt-40">
+      <section className="bg-white text-black flex flex-col sm:gap-14 gap-10 sm:pt-40 pt-28">
         <h1 className="text-5xl font-extrabold space-grotesk text-center">
           Terms And Conditions
         </h1>
-        <div className="bg-gray-100 py-12 px-16 w-full flex flex-col gap-8">
+        <div className="bg-gray-100 sm:py-12 py-8 lg:px-16 px-5 w-full flex flex-col gap-8">
           {/* box */}
-          <div className="bg-white rounded-lg p-5 text-sm">
+          <div className="bg-white rounded-lg sm:p-5 p-4 text-sm">
             Welcome to VUSELO. These Terms & Conditions ("Terms") govern your
             access to and use of the VUSELO website, mobile experience, and any
             related services (collectively, the "Site"), operated by VUSELO
@@ -92,12 +92,12 @@ VUSELO reserves the right to request proof of age at any point, including at the
                   >
                     <div className="flex items-center gap-3">
                       {/* Number */}
-                      <span className="text-lg font-extrabold space-grotesk">
+                      <span className="sm:text-lg text-base font-extrabold space-grotesk">
                         {String(index + 1).padStart(2, ".")}
                       </span>
 
                       {/* Title */}
-                      <p className="text-lg font-extrabold space-grotesk text-black transition-colors duration-300">
+                      <p className="sm:text-lg text-base font-extrabold space-grotesk text-black transition-colors duration-300">
                         {item.title}
                       </p>
                     </div>
@@ -116,7 +116,7 @@ VUSELO reserves the right to request proof of age at any point, including at the
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="text-sm pb-4 pr-10 whitespace-pre-line">
+                      <p className="sm:text-sm text-xs pb-4 pr-10 whitespace-pre-line">
                         {item.desc}
                       </p>
                     </div>

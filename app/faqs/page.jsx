@@ -64,7 +64,7 @@ function page() {
                   >
                     <div className="flex items-center gap-3">
                       {/* Number */}
-                      <span className="text-lg font-extrabold space-grotesk">
+                      <span className="sm:text-lg text-base font-extrabold space-grotesk">
                         {String(index + 1).padStart(2, ".")}
                       </span>
 
